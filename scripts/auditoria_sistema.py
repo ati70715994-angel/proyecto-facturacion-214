@@ -33,5 +33,6 @@ def ejecutar_auditoria():
     print(f"Auditoria finalizada con exito. Archivo generado: {nombre_archivo}")
     sys.exit(0)
 
+
 if __name__ == "__main__":
     ejecutar_auditoria()
