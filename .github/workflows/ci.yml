@@ -51,7 +51,7 @@ jobs:
           echo "- **Auditoría PEP 8:** Flake8 aprobado sin observaciones." >> $GITHUB_STEP_SUMMARY
           echo "- **Reglas de Negocio:** Pytest validó todos los cálculos contables." >> $GITHUB_STEP_SUMMARY
           echo "- **Script Interno:** Auditoría ejecutada y empaquetada como artefacto." >> $GITHUB_STEP_SUMMARY
-          echo "- **Estado Final:** Listo para distribución continua (CD)." >> $GITHUB_STEP_SUMMARY
+          echo "- **Estado Final:** Listo para la distribución continua (CD)." >> $GITHUB_STEP_SUMMARY
       - name: 9. Ejecutar script de mantenimiento
         env:  
            PYTHONPATH: .
@@ -63,4 +63,3 @@ jobs:
         with:
           name: reporte-mantenimiento-sistema
           path: reporte_mantenimiento.txt
-  
